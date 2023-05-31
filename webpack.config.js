@@ -74,10 +74,22 @@ module.exports={
                 use:  'babel-loader' //loader which we are going to use
             },
             {
+                test: /\.css$/,
+                use: [
+                'style-loader',
+                'css-loader'
+                ]
+            }
+              
+            /*
+            {
                 test: /\.scss$/i,
                 use: ["style-loader","sass-loader"],
             },
-            /*
+            {
+                test: /\.css$/i,
+                use: ["css-style-sheet"],
+            },
             {
                 test: /\.css$/i,
                 rules : [
