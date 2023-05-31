@@ -12,7 +12,6 @@ const App = () =>{
             <Header/>
             <Counter/>
             <Pokedex/>
-            <TimeoutTab/>
         </div>
     )
 }
